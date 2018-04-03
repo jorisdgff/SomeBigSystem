@@ -1,0 +1,37 @@
+<rules>
+    <rule>
+        <type>BUYER</type>
+        <key>HOLDING</key>
+        <usage>USEASKEY</usage>
+    </rule>
+    <rule>
+        <type>VENDOR</type>
+        <key>BUYER</key>
+        <usage>USEITSKEY</usage>
+    </rule>
+    <rule>
+        <type>ARTICLE</type>
+        <key>VENDOR</key>
+        <usage>USEASKEY</usage>
+    </rule>
+    <rule>
+        <type>PURCHASEORDER</type>
+        <key>ARTICLE</key>
+        <usage>USEITSKEY</usage>
+    </rule>
+    <rule>
+        <type>REPRESENTIVE</type>
+        <key>HOLDING</key>
+        <usage>USEASKEY</usage>
+    </rule>
+    <rule>
+        <type>CUSTOMER</type>
+        <key>REPRESENTIVE</key>
+        <usage>USEASKEY</usage>
+    </rule>
+    <rule>
+        <type>SALESORDER</type>
+        <key>CUSTOMER</key>
+        <usage>USEITSKEY</usage>
+    </rule>
+</rules>
